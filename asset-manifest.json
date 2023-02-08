@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/weatherclo/static/css/main.5afac5db.css",
-    "main.js": "/weatherclo/static/js/main.90e3b492.js",
+    "main.css": "/weatherclo/static/css/main.27c4d92e.css",
+    "main.js": "/weatherclo/static/js/main.a477dc97.js",
     "static/js/787.2b862616.chunk.js": "/weatherclo/static/js/787.2b862616.chunk.js",
     "service-worker.js": "/weatherclo/service-worker.js",
     "static/media/니트.png": "/weatherclo/static/media/니트.56217393341149dd1eea.png",
@@ -22,12 +22,12 @@
     "static/media/arrowOpen.svg": "/weatherclo/static/media/arrowOpen.67d47f447b31b57c012b.svg",
     "static/media/arrowClose.svg": "/weatherclo/static/media/arrowClose.4f624e5441e5f0b8bbfa.svg",
     "static/media/location.svg": "/weatherclo/static/media/location.2f059afe05723edb3a73.svg",
-    "main.5afac5db.css.map": "/weatherclo/static/css/main.5afac5db.css.map",
-    "main.90e3b492.js.map": "/weatherclo/static/js/main.90e3b492.js.map",
+    "main.27c4d92e.css.map": "/weatherclo/static/css/main.27c4d92e.css.map",
+    "main.a477dc97.js.map": "/weatherclo/static/js/main.a477dc97.js.map",
     "787.2b862616.chunk.js.map": "/weatherclo/static/js/787.2b862616.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5afac5db.css",
-    "static/js/main.90e3b492.js"
+    "static/css/main.27c4d92e.css",
+    "static/js/main.a477dc97.js"
   ]
 }

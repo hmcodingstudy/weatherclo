@@ -1,0 +1,93 @@
+/* 미리보기 */
+
+.fakeUpload {
+    width: 250px;
+    height: 250px;
+    border: 1px solid gray;
+    margin: 0 auto 12px;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.fakeUploadInactive {
+    width: 250px;
+    height: 250px;
+    border: 1px solid gray;
+    margin: 0 auto 12px;
+    cursor: pointer;
+    position: relative;
+    z-index: -1;
+}
+
+.submitBtn {
+    width: 140px;
+    background: #5E5DF0;
+    border-radius: 999px;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    word-break: break-word;
+    border: 0;
+    margin: 50px auto 50px;
+    display: block;
+}
+
+.submitBtn:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.inputTitle {
+    display: block;
+    width: 80%;
+    max-width: 660px;
+    height: 40px;
+    border-radius: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 17px;
+    font-weight: normal;
+    border: 1px solid rgb(137, 151, 155);
+    transition: border-color 150ms ease-in-out 0s;
+    outline: none;
+    color: rgb(33, 49, 60);
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    margin: 0 auto 10px;
+    font-family: inherit;
+}
+
+.inputTitle:focus {
+    box-shadow: #9090ff 0px 0px 0px 3px;
+}
+
+.textarea {
+    display: block;
+    margin: auto;
+    width: 80%;
+    max-width: 660px;
+    margin-top: 23px;
+    font-size: 17px;
+    outline: none;
+    color: rgb(33, 49, 60);
+    border: 1px solid rgb(137, 151, 155);
+    border-radius: 4px;
+    padding: 12px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.textarea:focus {
+    box-shadow: #9090ff 0px 0px 0px 3px;
+}

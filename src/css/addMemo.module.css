@@ -1,0 +1,104 @@
+fieldset {
+    border: none
+}
+
+.form {
+    /* background-color: thistle; */
+    width: 70%;
+    max-width: 1000px;
+    margin: 100px auto;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.cntContainer {
+    width: auto;
+    height: 100%;
+    /* border: 1px solid black; */
+    margin: 30px auto;
+}
+
+.calenderBtnWrap {
+    display: flex;
+    flex-direction: column;
+    width: 225px;
+    margin: 20px auto 20px;
+    line-height: 30px;
+}
+
+.calendarBtn {
+    display: block;
+    margin: 0 auto;
+    background-color: gray;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    font-size: 17px;
+    color: white;
+}
+
+.calendarBtn:hover {
+    transition: 0.3s;
+    background-color: rgb(172, 153, 255);
+    color: white
+}
+
+.date {
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+
+
+.cameraIcon {
+    display: block;
+    font-size: 30px;
+    color: gray;
+    margin: auto;
+    margin-top: calc((250px - 30px)/2)
+}
+
+.ul {
+    display: block;
+    width: 80%;
+    max-width: 660px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    /* padding-left: 12px; */
+    /* height: 152px; */
+}
+
+
+.ul>li {
+    display: block;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    height: 152px;
+    position: relative;
+}
+
+.deleteIcon {
+    color: gray;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    font-size: 17px;
+}
+
+/* .deleteIcon:hover {
+    transition: 0.3s;
+    color: tomato
+} */
+
+
+/* 반응형 */
+/* 575.98 */
+@media screen and (max-width:630px) {
+    .form {
+        width: 90%;
+    }
+
+}

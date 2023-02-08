@@ -1,0 +1,34 @@
+.editBtn {
+    width: 140px;
+    background: tomato;
+    border-radius: 999px;
+    box-shadow: tomato 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    word-break: break-word;
+    border: 0;
+    margin: 50px auto 50px;
+    display: block;
+}
+
+.editBtn:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+
+@media screen and (max-width:630px) {
+    .editBtn {
+        margin-top: 3px;
+    }
+}

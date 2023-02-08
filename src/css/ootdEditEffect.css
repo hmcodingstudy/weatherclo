@@ -1,0 +1,22 @@
+.e_fakeUpload {
+    width: 250px;
+    height: 250px;
+    border: 1px solid gray;
+    margin: 0 auto 12px;
+    cursor: pointer;
+    position: relative;
+}
+
+.e_fakeUpload:hover {
+    opacity: 0.7
+}
+
+.e_fakeUploadInactive {
+    width: 250px;
+    height: 250px;
+    border: 1px solid gray;
+    margin: 0 auto 12px;
+    cursor: pointer;
+    position: relative;
+    z-index: -1;
+}

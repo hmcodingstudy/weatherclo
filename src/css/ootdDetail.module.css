@@ -1,0 +1,132 @@
+.form {
+    /* background-color: thistle; */
+    width: 70%;
+    max-width: 1000px;
+    margin: 100px auto;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.cntContainer {
+    width: auto;
+    height: 100%;
+    /* border: 1px solid black; */
+    margin: 30px auto;
+}
+
+.calenderBtnWrap {
+    display: flex;
+    flex-direction: column;
+    width: 225px;
+    margin: 20px auto 20px;
+    line-height: 22px;
+}
+
+.title {
+    text-align: center;
+    font-size: 23px;
+    margin-top: -10px;
+}
+
+.date {
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+
+.picture {
+    width: 380px;
+    height: 380px;
+    margin: -18px auto 12px;
+    position: relative;
+}
+
+.content {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    display: block;
+    margin-top: 33px;
+}
+
+.editBtn {
+    width: 140px;
+    background: rgb(224, 224, 224);
+    border-radius: 999px;
+    box-shadow: black 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    word-break: break-word;
+    border: 0;
+    margin: 50px auto 50px;
+    display: block;
+}
+
+.editBtn:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.deleteBtn {
+    width: 140px;
+    background: black;
+    border-radius: 999px;
+    box-shadow: black 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    word-break: break-word;
+    border: 0;
+    margin: 50px auto 50px;
+    display: block;
+}
+
+.deleteBtn:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+
+/* 반응형 */
+/* 575.98 */
+@media screen and (max-width:630px) {
+    .form {
+        width: 90%;
+    }
+
+    .cntContainer {
+        width: auto;
+        height: 100%;
+        /* border: 1px solid black; */
+        margin: 30px auto;
+    }
+
+    .picture {
+        width: 300px;
+        height: 300px;
+        margin: -18px auto 12px;
+        position: relative;
+    }
+
+}

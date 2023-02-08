@@ -1,0 +1,419 @@
+/* 날씨 */
+.main {
+  display: flex;
+  height: 100%;
+}
+
+/* weatherInfoWrap */
+.screen1 {
+  padding: 0 20px 0;
+  height: 100%;
+  text-align: center;
+  width: 25%;
+  min-width: 330px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.locationWrap {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+  /* margin-bottom: 90px; */
+  margin-bottom: 10%;
+}
+
+.locationBtn {
+  border: none;
+  background: url(../images/location.svg) no-repeat;
+  text-indent: -9999px;
+  background-size: 20px;
+  width: 23px;
+  height: 19px;
+  margin-top: 3px;
+  cursor: pointer;
+}
+
+.cityName {
+  margin-bottom: 8px;
+  color: gray;
+}
+
+.mainTextWrap {
+  display: flex;
+  text-align: center;
+  display: block;
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+  /* width: 100% */
+}
+
+.mainTextFix {
+  margin-right: 20px;
+}
+
+.mainTextCng {
+  color: rgb(46, 46, 236);
+}
+
+.weatherIconWrap {
+  /* display: flex; */
+  /* width: 200px; */
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.weatherIconBox {
+  display: flex;
+  justify-content: center;
+}
+
+.weatherIcon {
+  margin: auto;
+  text-indent: -9999px;
+  background-size: 70px;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+}
+
+.tempWrap {
+  display: flex;
+  /* margin-top: 110px; */
+  margin-top: 10%;
+  margin-left: 33px;
+}
+
+.tempNumber {
+  font-weight: 300;
+  font-size: 120px;
+  color: black;
+  line-height: 110px;
+}
+
+.tempSymbol {
+  font-weight: 300;
+  font-size: 50px;
+  /* margin-left: -8px; */
+  color: black;
+  line-height: 100px;
+  margin-top: -15px;
+}
+
+/* etcData */
+
+.etcData {
+  width: 100%;
+  margin-top: 100px;
+  font-size: 22px;
+}
+
+/* .etcDate {
+  font-size: 20px;
+} */
+
+.screen2 {
+  height: 100%;
+  width: 100%;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+}
+
+.tabMenu {
+  display: none;
+}
+
+.hourly {
+  width: 100%;
+  height: 200px;
+  border-radius: 20px;
+  background-color: white;
+  /* border: 1px solid black; */
+  margin-right: 10px;
+  padding-bottom: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  /* width: 100%; */
+}
+
+.hourlyDate {
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 10px;
+  color: rgb(73, 73, 73);
+  font-weight: 400;
+}
+
+.hourlyHour {
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 3px;
+  font-size: 18px;
+}
+
+.hourlyTemp {
+  display: block;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 3px;
+  padding-bottom: 5px;
+  font-size: 18px;
+}
+
+/* 캐릭터 */
+
+
+.characterWrap {
+  display: flex;
+  margin-top: 2%
+}
+
+.character {
+  background: url(../images/작은사이즈.png) no-repeat;
+  text-indent: -9999px;
+  width: 174px;
+  height: 155px;
+  background-size: 124px;
+  margin-left: 30px;
+  /* position: absolute; */
+  /* top: 408px;
+  right: 156px; */
+}
+
+/* 말풍선 */
+.bubble {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: 100px;
+  position: relative;
+  background: #f7d9d9;
+  border-radius: 20px;
+  /* position: absolute; */
+  /* top: 240px;
+  right: 170px; */
+}
+
+.bubble:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-left-color: #f7d9d9;
+  border-right: 0;
+  border-bottom: 0;
+  margin-top: -10px;
+  margin-right: -20px;
+  /* border-top-color: #f7d9d9; */
+}
+
+.bubbleText {
+  width: 100%;
+  /* display: block; */
+  text-align: center;
+  font-weight: 400;
+  font-size: 23px;
+  font-family: inherit;
+  /* margin-right: 10px; */
+  /* font-family: "Cute Font", cursive; */
+  /* line-height: 100px; */
+  margin: auto;
+  padding: 5px
+}
+
+/* 옷 */
+.cloContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 25px;
+  margin: 5px auto 0;
+  padding: 20px 20px 0;
+  /* height: 400px; */
+  max-width: 800px;
+  width: auto;
+}
+
+.cloContainer>h4 {
+  text-align: center;
+  font-size: 21px;
+}
+
+.cloWrap {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+}
+
+.clotextWrap {
+  display: flex;
+}
+
+.clotImgWrap {
+  display: flex;
+}
+
+.cloImg {
+  height: 90%;
+}
+
+
+/* 반응형 */
+
+@media screen and (max-width:991.98px) {
+
+  /* 타블렛 */
+  .main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  /* weatherInfoWrap */
+  .screen1 {
+    /* padding: 0 20px 0; */
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    min-width: 330px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: auto;
+  }
+
+  .locationWrap {
+    margin-bottom: 0;
+  }
+
+  .weatherIconWrap {
+    /* display: flex; */
+    /* width: 200px; */
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    padding-right: 20px;
+  }
+
+  .weatherIcon {
+    margin-right: 26px;
+  }
+
+  .tempWrap {
+    display: flex;
+    /* position: absolute;
+    top: 28px;
+    left: 10px; */
+    margin-top: 10%;
+    margin-left: 0;
+  }
+
+  .tempNumber {
+    font-size: 90px;
+  }
+
+  .tempSymbol {
+    font-size: 38px;
+  }
+
+  .etcData {
+    display: none;
+    /* width: 100%;
+    margin-top: 100px;
+    font-size: 22px; */
+  }
+
+
+  /* screen2 */
+
+  .screen2 {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tabMenu {
+    width: 210px;
+    height: 46px;
+    border-radius: 30px;
+    margin: 13px auto;
+    display: flex;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+  .tab1,
+  .tab2 {
+    width: 90px;
+    height: 80%;
+    display: block;
+    margin: 4px auto 0;
+    border-radius: 25px;
+    font-size: 16px;
+    font-family: inherit;
+  }
+
+  .tab1 {
+    /* background-color: rgb(207, 176, 247); */
+    color: black
+  }
+
+  .tab1:hover,
+  .tab2:hover {
+    background-color: rgb(207, 176, 247);
+  }
+
+  .characterWrap {
+    margin-top: -90px;
+  }
+
+
+
+  .character {
+    width: 109px;
+    height: 133px;
+    background-size: 109px;
+    /* margin-left: 30px; */
+  }
+
+  .bubble {
+    width: 255px;
+    height: 80px;
+  }
+
+  .bubbleText {
+    font-size: 19px;
+  }
+
+  /* hourlyContainer */
+  .hourly {
+    width: auto;
+    padding: 7px;
+    margin-bottom: 20px;
+  }
+
+  .cloContainer {
+    height: auto;
+  }
+}
+
+/* 스마트폰 세로 */
+@media screen and (max-width:630px) {
+
+  .bubble {
+    width: 205px;
+  }
+
+}

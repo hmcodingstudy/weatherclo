@@ -1,0 +1,186 @@
+h2 {
+    font-size: 40px;
+    text-align: center;
+    line-height: 80px;
+    /* color: rgb(17, 17, 17); */
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-weight: 600;
+}
+
+.titleBox {
+    background: rgb(223, 223, 223);
+    width: 300px;
+    height: 80px;
+    border-radius: 20px;
+    margin: auto;
+}
+
+/* container */
+.container {
+    position: relative;
+    margin: 30px auto 0;
+    width: 80%;
+    height: 75vh;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 20px;
+}
+
+.plusIcon {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    font-size: 45px;
+    color: tomato;
+    cursor: pointer;
+}
+
+.plusIcon:hover {
+    transition: 0.3s;
+    transform: scale(1.2);
+}
+
+.monthWrap {
+    width: 100%;
+    height: 70px;
+    /* background: gray; */
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.monthWrap span {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 67px;
+}
+
+.monthWrap>button {
+    width: 60px;
+    height: 60px;
+    display: block;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    z-index: 2;
+
+}
+
+.monthWrap>button:hover {
+    transition: 0.3s;
+    color: tomato;
+    background: rgb(240, 240, 240)
+}
+
+.arrowBtnLeft {
+    margin: 10px 0 0 10px
+}
+
+.arrowBtnRight {
+    margin: 10px 10px 0 0;
+}
+
+.arrowIcon {
+    font-size: 30px;
+}
+
+/* contents */
+.contents {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin: auto;
+}
+
+/* 스크롤 바 없애기 */
+.contents::-webkit-scrollbar {
+    display: none;
+}
+
+.cntWrap {
+    width: 80%;
+    /* max-width: 1000px; */
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.cnt {
+    /* background-color: thistle; */
+    width: 290px;
+    min-width: 290px;
+    height: 380px;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 20px 20px 0;
+    position: relative;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    cursor: pointer;
+}
+
+/* cnt/ */
+.date {
+    margin: 22px 0 7px;
+    display: block;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.deleteIcon {
+    color: gray;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+}
+
+.deleteIcon:hover {
+    transition: 0.3s;
+    color: tomato
+}
+
+.photoTitle {
+    display: block;
+    margin: 0 0 8px 0;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.photo {
+    width: 240px;
+    height: 240px;
+    background-color: black;
+    border-radius: 20px;
+    margin: auto;
+}
+
+/* 반응형 */
+/* 575.98 */
+@media screen and (max-width:630px) {
+    .container {
+        width: 90%;
+    }
+
+    .cntWrap {
+        width: 80%;
+    }
+
+    .cnt {
+        width: 270px;
+    }
+
+}

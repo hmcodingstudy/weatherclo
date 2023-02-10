@@ -44,7 +44,7 @@ Redux-toolkit과 Redux-persist를 사용하여 기록한 내용이 localhost에 
 - 원하는 옵션만 on하여 값 입력 => result 페이지에 입력값 중 랜덤으로 옵션별 1개 골라줌
 - 유효성 검사 -> 옵션 스위치를 하나도 고르지 않거나, 옵션 스위치 on한 상태로 입력값을 다 채우지 않은 경우 에러 메세지 출력
 
-<img src="https://user-images.githubusercontent.com/116494960/217753848-7c2e94f4-4723-45c6-8fb6-13a1b6e9616b.png"/>
+<img src="https://user-images.githubusercontent.com/116494960/218043929-cfafef4a-3f8c-4a6e-b891-0dc3c1f5e6f7.jpg"/>
 
 ### ootd 페이지
 - 월별 게시물 조회 기능 구현

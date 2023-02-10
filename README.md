@@ -38,6 +38,8 @@ Redux-toolkit과 Redux-persist를 사용하여 기록한 내용이 localhost에 
 - 오늘 날씨에 맞는 옷 추천
 
 <img src="https://user-images.githubusercontent.com/116494960/217753848-7c2e94f4-4723-45c6-8fb6-13a1b6e9616b.png"/>
+<img src="https://user-images.githubusercontent.com/116494960/218044413-bba26abd-0b67-4fec-ae7d-4702395dbab3.jpg"/>
+<img src="https://user-images.githubusercontent.com/116494960/218044285-d99a1c6c-2543-43d4-8f78-0979ce6e1ca2.jpg"/>
 
 ### select 페이지
 - 오늘 입을 옷이 고민될 때 골라주는 기능

@@ -1,11 +1,6 @@
 {
   "short_name": "WeatherClo",
   "name": "WeatherClo",
-  "start_url": "/",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff",
-  "scope": "/",
   "icons": [
     {
       "src": "favicon.ico",
@@ -13,15 +8,18 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "./favicon/favicon-196x196.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "196x196"
     },
     {
-      "src": "logo512.png",
+      "src": "./favicon/favicon-310x310.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "310x310"
     }
   ],
-
+  "start_url": "/weatherclo/",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
 }

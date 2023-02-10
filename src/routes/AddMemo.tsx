@@ -7,7 +7,7 @@ import addMemo from '../css/addMemo.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCamera } from '@fortawesome/free-solid-svg-icons'
 import Calendar from 'react-calendar';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from "react-redux"
 import { Link, useNavigate } from 'react-router-dom';
 import uuid from 'react-uuid'
@@ -15,6 +15,7 @@ import { addPost } from "../data/data"
 import { RootState } from '../index'
 
 function AddMemo() {
+    const fileImage = useRef<any>();
     let navigate = useNavigate()
     let dispatch = useDispatch()
     let state = useSelector((state :RootState)=> state)
@@ -44,12 +45,12 @@ function AddMemo() {
         var file = fileSelect.files[0];
         var reader = new FileReader();
         var previewtest = document.querySelector('.imagePreview');
-        var ul = document.querySelector('ul');
-        var fakeUpload = document.querySelector('.fakeUpload')
+        // var ul = document.querySelector('ul');
+        var fakeUpload = document.querySelector('.fakeUpload') as HTMLInputElement;
 
         reader.addEventListener('load', (e) => {
-                const preview = createElement(e, file);
-                ul.appendChild(preview);
+                const preview:any = createElement(e, file);
+                fileImage.current.appendChild(preview);
             },false);
         
         if (file) {
@@ -57,14 +58,14 @@ function AddMemo() {
         }}
 
         function createElement(e, file) {
-            var fakeUpload = document.querySelector('.fakeUpload') as HTMLInputElement;
+            
 
-            fakeUpload.style.backgroundImage = `url( ${e.target.result} )`
-            fakeUpload.style.backgroundSize = 'cover'
-            fakeUpload.style.backgroundRepeat  = 'no-repeat'
-            fakeUpload.setAttribute('data-file', file.name);
+            fileImage.current.style.backgroundImage = `url( ${e.target.result} )`
+            fileImage.current.style.backgroundSize = 'cover'
+            fileImage.current.style.backgroundRepeat  = 'no-repeat'
+            fileImage.current.setAttribute('data-file', file.name);
             setPhoto(e.target.result)
-            return fakeUpload;
+            return fileImage;
         }
 
         // **유효성 검사**
@@ -132,7 +133,7 @@ function AddMemo() {
                     <div onClick={()=>{
                         const target = document.querySelector('.realUpload') as HTMLInputElement;
                         target.click();
-                    }} className={
+                    }} ref={fileImage} className={
                         calender? 'fakeUploadInactive': 'fakeUpload'
                     }>
                         {photo === null?  <FontAwesomeIcon icon={faCamera} className={addMemo.cameraIcon} />

@@ -14,23 +14,24 @@ import { editPost} from "../data/data"
 import { RootState } from '../index'
 
 function OotdEdit() {
-    let navigate = useNavigate()
+    const fileImage = useRef<any>();
+    
+let navigate = useNavigate()
   let {id} = useParams();
   let dispatch = useDispatch()
   let state = useSelector((state :RootState)=> state)
-  const [value, onChange] = useState(new Date());
-  
   const found = state.month1.find((x)=>{
     return x.id == id
     });
 
+  const [value, onChange] = useState(new Date(found.date));
   let [textContent, setTextContent] = useState(found.content);
   let [textTitle, setTextTitle] = useState(found.title);
 
 
   //캘린더 온오프
   let [calender,setCalender] = useState(false);
-  let [photo,setPhoto] = useState(null);
+  let [photo,setPhoto] = useState(`url(${found.image})`);
   let [postMonth, setPostMonth] = useState(null);
 
   let cal = document.querySelector('.react-calendar')
@@ -54,28 +55,25 @@ function previewFile(e) {
   var file = fileSelect.files[0];
   var reader = new FileReader();
   var previewtest = document.querySelector('.imagePreview');
-  var ul = document.querySelector('ul');
-  var e_fakeUpload = document.querySelector('.e_fakeUpload')
-
-  reader.addEventListener('load', (e) => {
-    // createElement(e, file)    
-    const preview = createElement(e, file);
-    e_fakeUpload.appendChild(preview);
+//   var ul = document.querySelector('ul');
+  var fakeUpload = document.querySelector('.fakeUpload')
+//   var e_fakeUpload = document.querySelector('.e_fakeUpload')
+    reader.addEventListener('load', (e) => {
+        const preview= createElement(e, file);
+        fileImage.current.appendChild(preview);
     },false);
-  
-  if (file) {
-      reader.readAsDataURL(file);
-  }}
+
+    if (file) {
+    reader.readAsDataURL(file);
+    }}
 
   function createElement(e, file) {
-    var e_fakeUpload = document.querySelector('.fakeUpload') as HTMLInputElement;
-
-      e_fakeUpload.style.backgroundImage = `url( ${e.target.result} )`
-      e_fakeUpload.style.backgroundSize = 'cover'
-      e_fakeUpload.style.backgroundRepeat  = 'no-repeat'
-      e_fakeUpload.setAttribute('data-file', file.name);
-      setPhoto(e.target.result)
-      return e_fakeUpload;
+    fileImage.current.style.backgroundImage = `url( ${e.target.result} )`
+    fileImage.current.style.backgroundSize = 'cover'
+    fileImage.current.style.backgroundRepeat  = 'no-repeat'
+    fileImage.current.setAttribute('data-file', file.name);
+    setPhoto(e.target.result)
+    return fileImage;
   }
 
 // **textarea 텍스트 변경
@@ -161,9 +159,9 @@ function previewFile(e) {
                     <div onClick={()=>{
                         const target = document.querySelector('.realUpload') as HTMLInputElement;
                         target.click();
-                    }} className={
+                    }} ref={fileImage} className={
                         calender? 'e_fakeUploadInactive': 'e_fakeUpload'
-                    } style={{backgroundImage:`url(${found.image})`,backgroundSize:'cover'}}>
+                    } style={{backgroundImage:photo,backgroundSize:'cover'}}>
                     </div>
 
 
